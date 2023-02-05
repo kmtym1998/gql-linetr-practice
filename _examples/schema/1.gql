@@ -1,0 +1,41 @@
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+# hogehoge
+# ignore:debug
+type Gopher {
+  "annotation annotation annotation annotation annotation"
+  id: ID! # inline
+  # gopher name
+  name: String!
+}
+
+type Todo {
+  id: ID!
+  title: String!
+  description: String!
+  userId: ID!
+}
+
+type User {
+  id: ID!
+  name: String!
+}
+
+input UpdateTodoInput {
+  id: ID!
+  title: String!
+  description: String!
+  userId: ID!
+}
+
+type Query {
+  todos: [Todo!]!
+  users: [User!]!
+}
+
+type Mutation {
+  updateTodo(input: UpdateTodoInput!): Todo!
+}
