@@ -20,8 +20,8 @@ func NewAnalyzer(f *os.File) *gqlanalysis.Analyzer {
 func run(f *os.File) func(pass *gqlanalysis.Pass) (interface{}, error) {
 	return func(pass *gqlanalysis.Pass) (interface{}, error) {
 		ignoreDetector := ignore.Detector{
-			Comments:   pass.Comments,
-			LinterName: pass.Analyzer.Name,
+			Comments: pass.Comments,
+			RuleName: pass.Analyzer.Name,
 		}
 
 		fmt.Fprintln(f, "= comments ============================")
