@@ -4,7 +4,7 @@ schema {
 }
 
 # hogehoge
-# ignore:debug
+# nolint:debug
 type Gopher {
   "annotation annotation annotation annotation annotation"
   id: ID! # inline
