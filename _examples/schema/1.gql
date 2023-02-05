@@ -12,6 +12,7 @@ type Gopher {
   name: String!
 }
 
+# nolint:thisIsNotIgnored
 type Gopher1 {
   "annotation annotation annotation annotation annotation"
   id: ID! # inline
