@@ -12,6 +12,13 @@ type Gopher {
   name: String!
 }
 
+type Gopher1 {
+  "annotation annotation annotation annotation annotation"
+  id: ID! # inline
+  # gopher name
+  name: String!
+}
+
 type Todo {
   id: ID!
   title: String!
